@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeSearch - Lista</title>
+  <link rel="stylesheet" href="./todos.css">
+</head>
+<body>
+  <header>
+    <div class="left-panel">
+      <a href="./index.html" class="btn">Voltar</a>
+      <button class="btn" id="reset">Resetar</button>
+
+      <div class="search-area">
+        <label for="search">Pesquisa</label>
+        <input type="text" id="search" placeholder="">
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <h2>TYPE</h2>
+      <div id="type-buttons" class="type-buttons"></div>
+    </div>
+  </header>
+
+  <main>
+    <div id="pokemon-list" class="pokemon-list"></div>
+  </main>
+
+  
+  <script src="./app.js"></script>
+</body>
+</html>
