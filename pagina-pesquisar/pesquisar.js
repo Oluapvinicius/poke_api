@@ -1,11 +1,11 @@
-// Seleciona os elementos da página
+
 const input = document.querySelector('.search-box input');
 const resetarBtn = document.querySelector('.resetar');
 const img = document.querySelector('.card img');
 const tipoEl = document.querySelector('.info span strong');
 const idEl = document.querySelector('.info span:last-child strong');
 
-// Função principal: busca Pokémon
+
 async function buscarPokemon(nomeOuId) {
   if (!nomeOuId) return;
   nomeOuId = nomeOuId.toLowerCase().trim();
@@ -23,12 +23,11 @@ async function buscarPokemon(nomeOuId) {
 
     const data = await response.json();
 
-    // Pega imagem oficial
+  
     const imagem =
       data.sprites.other['official-artwork'].front_default ||
       data.sprites.front_default;
 
-    // Atualiza o card
     img.src = imagem;
     const tipo = data.types[0].type.name.toUpperCase();
     tipoEl.textContent = tipo;
@@ -44,14 +43,13 @@ async function buscarPokemon(nomeOuId) {
   }
 }
 
-// Evento: pressionar Enter no input
 input.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     buscarPokemon(input.value);
   }
 });
 
-// Evento: botão Resetar
+
 resetarBtn.addEventListener('click', () => {
   input.value = '';
   img.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png";

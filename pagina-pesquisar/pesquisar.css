@@ -21,7 +21,7 @@ header {
   margin-top: 20px;
 }
 
-/* Botão VOLTAR */
+
 .voltar {
   background-color: white;
   color: black;
@@ -38,7 +38,7 @@ header {
   background-color: #ffe97a;
 }
 
-/* Botão RESETAR */
+
 .resetar {
   background-color: white;
   color: black;
@@ -55,7 +55,7 @@ header {
   background-color: #ffe97a;
 }
 
-/* Caixa de pesquisa */
+
 .search-box {
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ header {
   font-size: 25px;
 }
 
-/* Card principal */
+
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -99,7 +99,7 @@ header {
   transition: opacity 0.3s ease;
 }
 
-/* Informações do Pokémon */
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ header {
   color: black;
 }
 
-/* ---------- CORES DOS TIPOS ---------- */
+
 .fire { color: #EE8130; }
 .water { color: #6390F0; }
 .grass { color: #7AC74C; }
