@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
+    height: 80vh;
     background-color: #ffe97a;
 }
 header{
@@ -22,15 +22,21 @@ header{
   padding: 20px;
   margin-top: 60px;
   border: solid black 2px;
-  width: 600px;
-  height: 500px;
+  width: 700px;
+  height: 600px;
   margin: 0 auto;
 }
+.box h1{
+  display: flex;
+  font-family: 'Pixelify Sans', sans-serif; 
+  font-size: 28px; 
+}
+
 .relativ{
   display: flex;
   justify-content: center; 
   align-items: center;      
-  height: 700px;  
+  height: 600px;  
 }
 
 .voltar {
@@ -53,7 +59,6 @@ header{
   }
 
   .buttons {
-    
     margin: 0 auto;
     height: 60px;
     width: 40px;

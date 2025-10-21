@@ -26,7 +26,7 @@ async function getPokemonDescription(name) {
     console.log('Valor de pokemon:', pokemon)
     if (getH1) {
        
-        getH1.textContent = `${pokemon}`.toLocaleLowerCase()
+        getH1.textContent = `${pokemon}`
     } else {
         console.error('Elemento com ID "curiosidade" não encontrado.')
     }
@@ -57,8 +57,25 @@ async function getPokemonImage(name) {
   }
 }
 
-getPokemonImage("pikachu")
-createMessage("pikachu")
+async function randomPoke() {
+  
+  const bankPoke = ['charizard', 'gardevoir' , 'alakazam', 'snorlax', 'ditto']
+  const pokeAleatorio = Math.floor(Math.random() * bankPoke.length)
+  const nomePoke = bankPoke[pokeAleatorio]
+
+  return nomePoke
+
+}
+
+async function postPokeRandom() {
+  const nomePoke = await randomPoke() 
+  await getPokemonImage(nomePoke) 
+  await createMessage(nomePoke)
+}
+
+
+postPokeRandom()
+
 
 
 
