@@ -44,7 +44,7 @@ async function getPokemonsByType(type) {
   const response = await fetch(`https://pokeapi.co/api/v2/type/${type}`);
   const data = await response.json();
 
-  const pokemons = data.pokemon.slice(0, 12);
+  const pokemons = data.pokemon.slice(0, 120);
 
   for (let i = 0; i < pokemons.length; i++) {
     const pokeUrl = pokemons[i].pokemon.url;
